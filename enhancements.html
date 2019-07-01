@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Single page application enhancements" />
+  <meta name="keywords" content="SPA,Single page applications,enhancements" />
+  <meta name="author" content="Chamath Vindula"  />
+
+  <title>Single Page Applications Enhancements</title>
+  <link href="styles/style.css" rel="stylesheet" />
+</head>
+	
+<body>
+	<header>
+		<img src='images/NewLogo.png' alt='Single Page Applications' id='logo' title='Single Page Applications' />
+	
+
+		<nav>
+			<a href='index.php' class="menu" target="_blank" title="Home">Home</a>&#160;&#160;&#160;
+			<a href='topic.php' class="menu" target="_blank">SPAs In Depth</a>&#160;&#160;&#160;
+			<a href='enhancements.html' class="menu" title="Check out my enhancements">Enhancements</a>&#160;&#160;&#160;
+			<a href='quiz.php' class="menu" target="_blank" title="Take a short quiz">Quiz</a>&#160;&#160;&#160;
+			<a href="authenticate.php" class="menu" target="_blank">Manage</a>&#160;&#160;&#160;
+			<a href="phpenhancements.php" class="menu" target="_blank">PHP Enhancements</a>
+			
+		</nav><br />
+	</header>	
+
+	<h1>Enhancements</h1>
+
+	<h2>Enhancement 1<br /> Index Page Animation</h2>
+
+	<ul class="enhancement_list">
+		<li>I have applied a simple animation to show the background processes which take place when a user interacts with a single page application.</li>
+
+		<li>This involves the description of specific moments of the animation with the @keyframe rule. This allows you to have repeating animations that don't depend on user actions or JavaScript to get triggered.</li>
+
+		<li>This particular animation is done by inserting 14 individual images to the index page using html which represents each element in the diagram. Then each image is given specific properties and values in css to built up the initial basic diagrammatic layout (without animation).</li>
+
+		<li>Then the @keyframe rule is used to specify direction and distance the specific image is to travel.</li>
+
+		<li>Keyframes had to be created for each moving image as their sizes differed from one another therefore resulting in each image having to travel a different distance to make certain images move as a single unit.</li>
+
+		<li>Each keyframe identifier has to be then added to the specific image selector (in this case id) to create a link between the image and the animation.
+		</li>
+
+		<li>Other animation related properties such as animation-duration, animation-delay, animation-iteration-count had to be also added to the images in css.
+		</li>
+
+		<li>General keyframe rule applied was;<br />&#160;&#160;&#160;&#160;<code><br />&#160;@keyframes keyframe_identifier{<br />&#160;&#160;&#160;&#160;&#160;&#160;from{transform: transform_property(value)}<br />&#160;&#160;&#160;&#160;&#160;&#160;to{transform: transform_property(value)}<br />&#160;&#160;&#160;&#160;}</code><br /></li>
+
+		<li>General digram element properties used;<br />&#160;&#160;&#160;&#160;<br />
+		<code>#element_id{position:position_value;<br />&#160;&#160;&#160;&#160;&#160;&#160;width: value;<br />&#160;&#160;&#160;&#160;&#160;&#160;height: value;<br />&#160;&#160;&#160;&#160;&#160;&#160;top: value;<br />&#160;&#160;&#160;&#160;&#160;&#160;left: value;<br />&#160;&#160;&#160;&#160;&#160;&#160;animation-name: keyframe_identifier;<br />&#160;&#160;&#160;&#160;&#160;&#160;animation-duration: time_in_seconds;<br />&#160;&#160;&#160;&#160;&#160;
+	 	  animation-delay: time_in_seconds;<br />&#160;&#160;&#160;&#160;&#160;&#160;animation-iteration-count: value;<br />&#160;&#160;&#160;&#160;&#160;&#160;animation-fill-mode: value;<br />&#160;&#160;&#160;}</code></li>
+
+		<li>I have not used any third party code in this enhancement and is entirely my own code but I used a YouTube video to understand the concept of animations and how it works. The source is cited below: <br />(The Net Ninja (2016), CSS Animation Tutorial #4 - Keyframes
+		, Jul 25, viewed 20 March 2018, Available at: https://www.youtube.com/watch?v=PjR97QzOrJM&#38;index=4&#38;list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5)</li>
+
+		<li>Click <a href="index.html#rectangle1" target="_blank" class="enhancement_link1">'here'</a> if you want to have another look at the enhancement.</li>
+	</ul>
+
+<h2>Enhancement 2<br /> Topic page image map</h2>
+
+<ul class="enhancement_list">
+		<li>I have used an image map in the topic page of my website.</li>
+
+		<li>The image map is created on one of the two graphics which I have used within this page.</li>
+
+		<li>I have used the 'lifecycle(SPA).png' image as the mainjor image and have added links to five different sections within the same page and also for the index page.</li>
+
+		<li>I have linked 'client' and 'server' to the first section in the topic page through 'clientAndServer' id</li>
+
+		<li>I have linked 'AJAX' to the second section in the topic page through 'ajaxAndJson' id</li>
+
+		<li>I have linked 'JSON' to the second section in the topic page through 'ajaxAndJson' id</li>
+
+		<li>I have linked 'SPA LifyCycle' to the animation in the index page through 'rectangle1' id</li>
+
+		
+
+		<li>Code which I have used for this is;<br />
+		<code>
+		&#160;&#160;img src="images/lifecycle(SPA).png" alt="MPA Diagram" title="file size - 21KB" usemap="#SPA" /<br />
+		&#160;&#160;&#160;&#160;map name="SPA" id="SPA"<br />
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;area shape="rect" coords="15,40,160,280" href="topic.html#clientAndServer" alt="Client"<br />
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;area shape="rect" coords="377,40,534,280" href="topic.html#clientAndServer" alt="Server"<br />
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;area shape="rect" coords="180,160,220,180" href="topic.html#ajaxAndJson" alt="AJAX"<br />
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;area shape="rect" coords="225,10,320,30" href="index.html#rectangle1" alt="Life Cycle"<br />
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;area shape="rect" coords="260,210,290,230" href="topic.html#ajaxAndJson" alt="JSON"<br />
+		&#160;&#160;&#160;&#160;/map
+		</code>
+		</li>
+		
+		<li>I have not used any third party code in this enhancement and is entirely my own code but I used the additional material given on blackboard to understand the concept of image maps. The source is cited below: <br />(2015)Image Maps
+		</li>
+
+		<li>Click <a href="topic.html#imageMap" target="_blank" class="enhancement_link1">'here'</a> if you want to have another look at the image map.</li>
+	</ul>
+
+
+	
+
+	<footer>
+		<a id="authoremail" href='mailto:101887796@student.swin.edu.au' title="Meet the Author!" target="_blank">Chamath Vindula</a>
+	</footer>
+
+</body>
+
+</html>	

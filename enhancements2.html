@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+	<head>
+		<meta charset="utf-8" />
+  		<meta name="description" content="Single page applications quiz results" />
+ 		<meta name="keywords" content="SPA,Single page applications,result" />
+  		<meta name="author" content="Chamath Vindula"  />
+
+  		 <title>Single Page Applications Quiz Results</title>
+  		 <link href="styles/style.css" rel="stylesheet" />
+
+  	</head>
+
+	<body id="b5">
+
+	<header>
+		<img src='images/NewLogo.png' alt='Single Page Applications' id='logo' title='Single Page Applications' />
+	
+
+		<nav>
+			<a href='index.php' class="menu" target="_blank" title="Home">Home</a>&#160;&#160;&#160;
+			<a href='topic.php' class="menu" target="_blank">SPAs In Depth</a>&#160;&#160;&#160;
+			<a href='enhancements.html' class="menu" title="Check out my enhancements" target="_blank">Enhancements</a>&#160;&#160;&#160;
+			<a href='quiz.php' class="menu" target="_blank" title="Take a short quiz">Quiz</a>&#160;&#160;&#160;
+			<a href="authenticate.php" class="menu" target="_blank">Manage</a>&#160;&#160;&#160;
+			<a href="phpenhancements.php" class="menu" target="_blank">PHP Enhancements</a>
+			
+		</nav><br />
+	</header>	
+
+	<h1>Enhancements</h1>
+
+	<h2>Enhancement 1<br /> Quiz Timer Triggered on Id Input</h2>
+
+	<ul class="enhancement_list">
+		<li>I have implemented a timer for the quiz where a user has to complete the quiz within the allocated time.</li>
+
+		<li>The timer function is triggered when the user enters his/her id and moves over to anwser the immediate question.</li>
+
+		<li>This occurs when the users enters the id and as soon as the id input looses focus.</li>
+
+		<li>To create this timer I had to create a setInterval timing event where a certain function can be executed repeatedly after a specified no. of milliseconds.</li>
+
+		<li>The nested function repeatedly takes the difference of two time values and displays the result.</li>
+
+		<li>As soon as the no. of minutes and no. of seconds turns to '0' then the quiz is terminated</li>
+
+		<li>Once quiz is terminated the entire process is bypassed and it moves over to the result.html page (note that no. of attempts will not be increased)</li>
+
+		<li>In the case of a 'time over' the user can retry the quiz without loosing his/her number of attempts</li>
+
+		<li>I have used the web site 'w3schools' to gain the basic understanding and key features required to implement the timer. The source is cited below: <br />w3schools (2016),JavaScript Timing Events, viewed 23 April 2018, Available at: https://www.w3schools.com/js/js_timing.asp</li>
+
+		<li>Click <a href="quiz.html#stID" target="_blank" class="enhancement_link1">'here'</a> if you want to have another look at the enhancement.</li>
+	</ul>
+
+
+	<footer>
+		<a id="authoremail" href='mailto:101887796@student.swin.edu.au' title="Meet the Author!" target="_blank">Chamath Vindula</a>
+	</footer>
+
+</body>
+
+</html>		 

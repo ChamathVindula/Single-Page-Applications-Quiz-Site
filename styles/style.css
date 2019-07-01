@@ -1,0 +1,493 @@
+	/* filename: style.css 
+	author: Chamath Vindula 
+	created: 15-03-2018 
+	last modified: pending 
+	description: css file created for index.html, topic.html, quiz.html 
+	*/ 
+
+	body {background-image: url(images/dark.jpg);
+		  background-size: cover;	
+		  background-attachment: fixed;
+		  margin: 0px;
+	}
+
+	/*index.html page styling*/
+	/*Header styling*/
+	header{background-color: white;
+		   margin: 0px;	
+	}
+
+	/*Header logo styling*/
+	#logo{height: 100px;
+		  position: relative;
+		  top: 25px;
+		  left: 10px;	
+	}
+
+	/*Main menu styling*/
+	/*This is for the entire navigation menu*/
+	nav{text-align: center;
+		position: relative;
+		top: -40px;
+		margin-left: 25%;
+	}
+
+	/*This is for each individual menu button*/
+	.menu{color:#C40C1E; 
+		  background-color: white;
+		  text-decoration: none; 
+		  font-size: 23px; 
+		  font-family: Arial, verdana, sans-serif;
+		  border-radius: 25px;
+		  padding: 2px 6px;
+		  border: 3px solid #C40C1E;
+		  transition-duration: 0.3s;/*transition duration gives time difference for state change from normal to hover*/
+	}
+
+	.menu:hover{background-color: #C40C1E; 
+		        color: white;
+		        box-shadow: 5px 5px 10px grey;
+		        border-color: #C40C1E;
+	}	
+
+	/*footer styling*/
+	 footer{background-color: #C40C1E;
+	 		text-align: center;
+	 		position: relative;
+	 }
+
+	 #authoremail{font-family: arial, verdana, sans-serif;
+	 			  background-color: transparent;
+	 			  text-decoration:none;
+	 			  color: white;	
+	 }	
+
+	 /*An 'id' had to be used for the index page footer because it didn't go to the bottom of the page as there was no content in the index page
+	 so I had to manually drag it down to the bottom of the page using absolute positioning and by setting bottom to 0 (I couldnt find any other solution for this)
+	 */
+	 #index_footer{position: absolute;
+	 			   bottom: 0px;
+	 			   width: 100%;	
+	 }			
+
+	/*topic.html page styling*/
+	/*h1, h2, h3, p, section, ol, ul styles specified here apply to all four pages unless specified otherwise using id|class selectors*/
+	h1{font:small-caps 30px Arial, verdana, sans-serif;
+	   color: white;
+	   text-align: center;
+	   /*box shadow attaches one or more shadows to an element
+		inset- shadow is set to inner shadow(inside the element)
+		first value - horizontal position of the shadow
+		second value - vertical position of the shadow
+		third value - saturation of shadow
+	    rgba - shadow color
+	   */
+	   box-shadow: inset 0 5px 5px rgba(0,0,0,0.5);/*rgba-rgb alpha values specify the opacity of the object(0.0-fully transparent and 1.0-fyllu opaque)*/
+	   background-color: #C40C1E;
+	   border-radius: 25px;
+	   padding:10px;	
+	}
+
+	h2{color: white;
+	   font-family: Arial, verdana, sans-serif;
+	   text-align: center;
+	   box-shadow: inset 0 5px 5px rgba(0,0,0,0.5);/*rgba-rgb alpha values specify the opacity of the object(0.0-fully transparent and 1.0-fyllu opaque)*/
+	   background-color: #C40C1E;
+	   border-radius: 25px;
+	   padding:10px;
+	}
+
+	h3{color: white;
+	   font-family: Arial, verdana, sans-serif;
+	   text-align: center;
+	   font-size: 20px;  	
+	}
+
+	/*Aside heading*/
+	#special_h2{box-shadow: inherit;
+				border-radius: 0px;
+	}
+
+	/*References heading*/
+	#special_h3{border-top: 4px solid white;
+				padding-top: 8px;
+	}
+
+	p,blockquote{font-family: Arial, verdana, sans-serif;
+	  			 font-size: 17px;
+	  			 color: white;
+	  			 text-align: justify;	
+
+	}	
+
+	section{width: auto;
+			padding-left: 7px;
+		    padding-right: 7px;
+		    margin: 10px;
+	}
+
+	/*SPA and MPA sections*/
+	.sub_special_section{border: 4px solid white;
+						 border-radius: 25px;
+	}
+
+	/*Ajax and JavaScript frameworks sections*/
+	.special_section{width: 71%;
+					 margin: 20px;
+					 position: relative;
+	}
+
+	#authormail{
+
+	}
+
+	#main{border-radius: 0px;}
+
+	aside{width: 25%;
+		  padding: 1px;
+		  margin: 10px;
+		  border: 3px solid white;
+		  border-radius: 25px;
+		  background-color:#C40C1E; 
+		  float: right;
+	}
+
+	ol {font-family: arial, verdana, sans-serif;
+		font-size: 17px;
+		color: white;
+	}
+
+	ul{font-family: arial, verdana, sans-serif;
+	   font-size: 16px;
+	   color: white;	
+	}
+
+	section ul {list-style-type: square;}
+
+	ul li{margin-bottom: 5px;}
+ 
+	table, td, th{border: 3px solid white;
+				  border-collapse:collapse;
+				  font-family: arial, verdana, sans-serif;
+				  font-size: 20px;
+				  color: white;
+				  padding: 7px;	
+				  text-align: center;
+				  margin: auto;
+	}
+
+	caption{color: white;}
+
+	th{background-color:#C40C1E;}
+
+	td{background-color:black;}
+
+	/*id of <p> containing 2 topic images*/
+	#diagram{text-align: center;}
+
+	img{border-radius: 25px;}
+
+
+	/* quiz.html page styling*/
+	 legend {font-family: Arial, verdana, sans-serif;
+	 		font-size: 25px;
+	 		color: #C40C1E;
+	 }
+
+	 label {font-family: Verdana, Arial, sans-serif;
+	 		font-size: 15px;
+	 		color: white;
+	 }
+
+	 fieldset{border: 4px solid white;
+	 		  border-radius: 25px;
+	 		  margin: 20px;
+	 }
+
+	 /*fieldset containing submit and reset buttons*/
+	 #special_fieldset{text-align: center;}
+
+	 /*submit and reset buttons*/
+	 .btn{font-size: 18px;
+	 	  width: 120px;
+	 	  background-color: #C40C1E;
+	 	  color: white;
+	 }
+
+	 .btn:active{background-color: white;
+	 			 color: #C40C1E;
+	 }
+
+	 input{border-radius: 25px;
+	 	   padding: 4px;
+	 }
+
+	 /*h1 of quiz.html page*/
+	 #quizHeading{color: White;
+	 			  font-family: Verdana, Arial, sans-serif;
+	 			  text-align: center;
+	 }
+
+	 /*result.html page*/
+
+	 #retry{font-family: Verdana, Arial, sans-serif;
+	 		margin: auto;
+	 		border:2px solid white;
+	 		border-radius: 25px;
+	 		padding-top: 5px;
+	 		padding-bottom: 5px;
+	 		padding-left: 5px;
+	 		padding-right: 5px;
+
+	 }
+
+	 #Home{font-family: Verdana, Arial, sans-serif;
+	 	   margin: auto;
+	 	   border:2px solid white;
+	 	   border-radius: 25px;
+	 	   padding-top: 5px;
+	 	   padding-bottom: 5px;
+	 	   padding-left: 5px;
+	 	   padding-right: 5px;
+	 }
+
+	 .result_values{font-size: 22px;
+	 				text-decoration: none;
+	 				color: white;
+	 }
+
+	 /*Enhancements2*/
+	 #demo{color: white;
+	 	   font-size: 20px;	
+	 }
+
+	 /*Enhancements*/
+
+	 #rectangle1{position: fixed;
+	 			 top: 35%;
+	 			 left: 10%;
+	 			 width:16%; 
+	 			 height:52%; 	
+	 }
+
+	 #rectangle2{position: fixed;
+	 			 top: 35%;
+	 			 right: 10%;
+	 			 width: 16%;
+	 			 height: 52%;
+	 }
+	  
+	 #circularArrow1{position: fixed;
+	 				width: 7.4%;
+	 				height: 15%;
+	 				top: 70%;
+	 				left: 17%;
+	 				animation:rotateArrowRight;
+	 				animation-timing-function: linear;
+	 				animation-duration: 1s;
+	 				animation-iteration-count: infinite;
+	 				animation-delay: 10s;
+	 }
+
+	 #circularArrow2{position: fixed;
+	 				width: 7.4%;
+	 				height: 15%;
+	 				top: 70%;
+	 				right: 17%;
+	 				animation:rotateArrowLeft;
+	 				animation-timing-function: linear;
+	 				animation-duration: 1s;
+	 				animation-iteration-count: infinite;
+	 				animation-delay: 13s;
+	 }
+	  
+	 #arrow3{position: fixed;
+	 		 top: 37%;	
+	 		 left: 26%;
+	 		 width: 17%;
+	 		 height: 4%;
+	 		 animation-name: driveright;
+	 		 animation-duration: 3s;
+	 		 animation-delay: 1s;
+	 		 animation-fill-mode: both;
+	 		 
+	 }
+
+	 #arrow1{position: fixed;
+	 		 top: 51%;
+	 		 right: 26%;
+	 		 width: 17%;
+	 		 height: 4%;
+	 		 animation-name: driveleft;
+	 		 animation-duration: 3s;
+	 		 animation-delay: 5s;
+	 		 animation-fill-mode: both;
+	 }
+	 
+	 #arrow4{position: fixed;
+	 		 top: 65%;
+	 		 left: 26%;
+	 		 width: 17%;
+	 		 height: 4%;
+	 		 animation-name: driveright;
+	 		 animation-duration: 3s;
+	 		 animation-delay: 10s;
+	 		 animation-iteration-count: infinite;
+	 		 animation-fill-mode: both;
+	 }
+
+	#arrow2{position: fixed;
+	 		 top: 81%;
+	 		 right: 26%;
+	 		 width: 17%;
+	 		 height: 4%;
+	 		 animation-name: driveleft;
+	 		 animation-duration: 3s;
+	 		 animation-delay: 13s;
+	 		 animation-iteration-count: infinite;
+	 }
+
+	 #request{position: fixed;
+	 		  width:8.3%; 
+ 			  top: 33.5%;
+ 			  left: 26.3%;
+ 			  animation-name: driveright_request;
+	 		  animation-duration: 3s;
+	 		  animation-delay: 1s;
+	 		  animation-iteration-count: 1;
+	 		  animation-fill-mode: both;
+ 	}
+	
+	#redDocument1{position: fixed;
+				 top: 44.7%;
+				 right: 26%;
+				 width:3.4%; 
+			 	 height:6.5%;
+			 	 animation-name: driveleft_redDoc1;
+	 		   	 animation-duration: 3s;
+	 			 animation-delay: 5s;
+	 			 animation-fill-mode: both;
+	 			 border-radius: 0px;
+ 	}
+
+ 	#redDocument2{position: fixed;
+				 top: 74.7%;
+				 right: 26%;
+				 width:3.4%; 
+			 	 height:6.5%;
+			 	 animation-name: driveleft_redDoc2;
+	 		   	 animation-duration: 3s;
+	 			 animation-delay: 13s;
+	 			 animation-iteration-count: infinite;
+	 			 border-radius: 0px;
+	} 			 
+
+ 	#response{position: fixed;
+ 			  width:7.8%; 	
+ 			  top: 47.6%;
+ 			  right: 29.2%;	
+ 			  animation-name: driveleft_response;
+	     	  animation-duration: 3s;
+	 		  animation-delay: 5s;
+	 		  animation-fill-mode: both;
+ 	}
+
+ 	#ajax{position: fixed;
+ 		  width:7.9%; 	
+ 		  top: 61.5%;
+ 		  left: 26.3%; 
+ 		  animation-name: driveright_ajax;
+	 	  animation-duration: 3s;
+	 	  animation-delay: 10s;
+	 	  animation-iteration-count: infinite;
+	 	  animation-fill-mode: both;
+ 	}
+
+ 	#json{position: fixed;
+ 		  width:7%; 	
+ 		  top: 77.6%;
+ 		  right: 29.5%;
+ 		  animation-name: driveleft_json;
+	 	  animation-duration: 3s;
+	      animation-delay: 13s;
+	 	  animation-iteration-count: infinite;	
+ 	}
+
+ 	/*keyframe rules given to each image in the animation*/
+
+ 	/*rule for arrows 3 and 4*/
+	 @keyframes driveright{
+	 	from{transform: translateX(0%);} /*'from' specifies the initial location of the object from which motion starts, translateX means motion in x axis*/
+	 	to{transform: translateX(183%);}	/*'to' specifies the destination of the object in motion, translate X means motion in x axis*/	
+	 }
+
+	 /*rule for arrows 1 and 2*/
+	@keyframes driveleft{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(-183%);}/*negative values specify motion in the oppsite direction*/		
+	 }
+
+	 /*rule for 'request' image*/
+	 @keyframes driveright_request{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(374%);}		
+	 }
+
+	 /*rule for 'ajax' image*/
+	 @keyframes driveright_ajax{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(393%);}		
+	 }
+
+	 /*rule for 'redDoc1' image*/
+	 @keyframes driveleft_redDoc1{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(-915.4%);}		
+	 }
+
+	 /*rule for 'response' image*/
+	 @keyframes driveleft_response{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(-400%);}		
+	 }
+
+	 /*rule for 'redDoc2' image*/
+	 @keyframes driveleft_redDoc2{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(-915.4%);}		
+	 }
+
+	 /*rule for 'json' image*/
+	 @keyframes driveleft_json{
+	 	from{transform: translateX(0%);}
+	 	to{transform: translateX(-447%);}		
+	 }
+
+	 /*rule for 'circularArrow1' image*/
+	 @keyframes rotateArrowRight{
+	 	from{transform:rotate(0deg);}
+	 	to{transform: rotate(360deg);}
+	 }
+
+	 /*rule for 'circularArrow2' image*/
+	  @keyframes rotateArrowLeft{
+	 	from{transform:rotate(0deg);}
+	 	to{transform: rotate(-360deg);}
+	 }
+
+	
+	 /*Enhancements.html page styling*/
+	 
+	 code{font-size: 15px;
+	 	  color: white;
+	 	  font-weight: bold; 	
+	 }
+
+	 .enhancement_link1{text-decoration: none;
+	 					color: white;
+	 					font-size: 1.5em;
+	 }
+
+	 .enhancement_list li{margin-bottom: 1.5em;}
+
+	 area{border:5px solid blue;}
